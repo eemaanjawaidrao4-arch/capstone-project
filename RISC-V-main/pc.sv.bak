@@ -1,0 +1,14 @@
+
+module pc (
+    input  logic        clk,
+    input  logic        reset,
+    input  logic [31:0] x,
+    output logic [31:0] out
+);
+    initial out = '0;
+
+    always_ff @(posedge clk) begin
+        if (reset) out <= 32'd0;
+        else       out <= x;
+    end
+endmodule
