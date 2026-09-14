@@ -1,3 +1,0 @@
-BEGIN 1:reg_file:fast:work
-    regs :  1:risc_v_tb:fast:work
-END 
